@@ -21,6 +21,7 @@
       ```
       create schema airlines;
       ```<br>
+      
   b. Create a airports dimension table<br>
       ```
       CREATE TABLE airlines.airports_dim (
@@ -30,6 +31,7 @@
           name VARCHAR(200)
       );
       ```<br>
+      
   c. Create a daily flights fact table<br>
      ```
      CREATE TABLE airlines.daily_flights_fact (
@@ -44,6 +46,7 @@
           arr_delay BIGINT
       );
      ```<br>
+     
   d. Write a copy command to copy the dimension data from S3 to Redshift Cluster<br>
      ```
       COPY airlines.airports_dim
@@ -53,11 +56,27 @@
         IGNOREHEADER 1
         REGION <Region>
      ```<br>
+
 4. Create Read Only Access to S3 for Redshift Cluster
 <img width="1246" alt="image" src="https://github.com/user-attachments/assets/79c27da3-6a09-4e30-9ffe-63947fdfb844">
 
 5. Load data From S3 to Red Shift using the above mentioned COPY command
 <img width="1468" alt="image" src="https://github.com/user-attachments/assets/84f3dc0a-90ad-4d60-8c9f-c2e00b58758a">
+
+6. Create Endpoint for access to Redshift by Glue Crawler
+Since the Redshift server is sitting inside the VPC we need to create a endpoint to access it.
+<img width="1319" alt="image" src="https://github.com/user-attachments/assets/a2c7036c-aac6-4013-b60a-7fe73c8e167b">
+
+### Create Glue Service
+
+1. Create a Glue database to store metadata from Redshift cluster
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/1ef873f0-0cd3-42a8-b659-f38b51bad919">
+
+2. Create Glue Crawler
+<img width="849" alt="image" src="https://github.com/user-attachments/assets/62b88ef6-c8cc-4ccc-8268-8ea3e335072f">
+
+
+
 
 
 
