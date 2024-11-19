@@ -83,6 +83,25 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 1. Add the source and create a filter to extract recors where delay is greater than and equal to 60 minutes
 <img width="920" alt="image" src="https://github.com/user-attachments/assets/1c59165e-ffed-4034-a27b-905b1468aa4f">
 
+2. Create a join with dimension table in Redshift to get the departure airports from the ```airports_dim``` table
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/aab9e42f-5ae6-4977-91e2-2a4e3d23e498">
+
+3. Change Change Schema step to change column names and drop columns not present in the table of ```daily_flight_fact``` as given in (3c)
+<img width="892" alt="image" src="https://github.com/user-attachments/assets/251d9c24-3a25-422f-acc5-da7b54fd903b">
+
+4. Create another join with dimension table in Redshift to get the arrival airports from the ```airports_dim``` table
+<img width="848" alt="image" src="https://github.com/user-attachments/assets/f1808da3-eb04-44d0-941f-ca76bd828f1e">
+
+5. Create another Change Schema step to modify column names and drop columns
+<img width="857" alt="image" src="https://github.com/user-attachments/assets/1345ac6f-a768-4316-a05f-ab4d5d681d2f">
+
+
+
+
+
+
+
+
 
 
 
