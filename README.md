@@ -1,5 +1,31 @@
 # Airline-Passenger-Referral-Prediction
 
+There are two different datasets. 
+
+One dataset contain two tables 
+  1. dimesion table about different airports
+  2. Flights table with details about arrival and departure airport, delay, etc. It is a fact table
+
+The second dataset contains passenger ratings about different flights.
+
+In the first part of the project, I have create AWS data pipelines using services like AWS Redshift for data warehousing, AWS Glue and AWS Step Functions, S3 and Event Bridge to transform the data and store into a new fact table in AWS redshift.
+
+Steps: 
+1. Create a S3 bucket to store flights data
+2. Once .csv file lands into the S3 bucket, a event is triggered.
+3. The event kick starts the step function job.
+4. The step function call Glue Crawler to start the process of moving and transforming data from S3 to AWS Redshift. While transforming it filters records based on delayof over 60 min and joins with dimention table to get a detailed information about the a particular flight and then it inserts the data into the daily_flights_fact table in warehouse.
+5. Depending on the status of the glue job, it sends notification to email stating the status of the job.
+
+
+In the second part of the project, I have used the second dataset with some data from the first dataset to analyze the passenger behaviour towards the particular flight and how likely the passenger is going to give referral
+
+1. Conducted data analysis in Python to evaluate the performance of airline amenities such as food and beverages, cabin crew service, and seat comfort.
+2. Applied machine learning algorithms (Logistic Regression, k-NN, Decision Tree, Random Forest, and SVM) to predict passenger referrals, and evaluated models using metrics like accuracy, recall, and precision.
+3. Achieved 94% accuracy and precision and 92.34% recall score on test data with Random Forest Model after hyper parameter tuning.
+
+The details of the analysis can be found in .ipynb file
+
 ### Create S3 bucket and folders
 1. Created a S3 bucket named ```data-airline-landing-zn```
 <img width="1053" alt="image" src="https://github.com/user-attachments/assets/b10fe8f3-509a-45fc-bdaf-96977fb3311f">
