@@ -26,6 +26,8 @@ In the second part of the project, I have used the second dataset with some data
 
 The details of the analysis can be found in .ipynb file
 
+
+## AWS ETL Implentation Details
 ### Create S3 bucket and folders
 1. Created a S3 bucket named ```data-airline-landing-zn```
 <img width="1053" alt="image" src="https://github.com/user-attachments/assets/b10fe8f3-509a-45fc-bdaf-96977fb3311f">
