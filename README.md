@@ -79,6 +79,12 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 <img width="638" alt="image" src="https://github.com/user-attachments/assets/4d101122-86d4-475e-8098-d4542ae20d0b">
 
 
+### Create Visual ETL
+1. Add the source and create a filter to extract recors where delay is greater than and equal to 60 minutes
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/1c59165e-ffed-4034-a27b-905b1468aa4f">
+
+
+
 
 
 
