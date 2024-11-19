@@ -75,6 +75,8 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 2. Create Glue Crawler
 <img width="849" alt="image" src="https://github.com/user-attachments/assets/62b88ef6-c8cc-4ccc-8268-8ea3e335072f">
 
+3. Upon running the crawlers, the tables get loaded
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/4d101122-86d4-475e-8098-d4542ae20d0b">
 
 
 
