@@ -143,7 +143,8 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 <img width="808" alt="image" src="https://github.com/user-attachments/assets/c08b042d-3836-4f9f-ae3b-f49918d942bd">
 
 2. Step Function Job Status
-<img width="349" alt="image" src="https://github.com/user-attachments/assets/817eb5d4-420d-4184-966f-50dec6c87e12">
+<img width="306" alt="image" src="https://github.com/user-attachments/assets/4f4ca3a1-569e-4fb0-96c8-80463c4a0882">
+
 
 
 
