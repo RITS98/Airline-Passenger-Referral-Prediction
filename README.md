@@ -134,6 +134,18 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 
 ```
 
+### Output
+
+1. Fact Table Output
+<img width="1050" alt="image" src="https://github.com/user-attachments/assets/5ece07d0-f401-4682-aace-91392a742862">
+
+2. Email Status
+<img width="808" alt="image" src="https://github.com/user-attachments/assets/c08b042d-3836-4f9f-ae3b-f49918d942bd">
+
+2. Step Function Job Status
+<img width="349" alt="image" src="https://github.com/user-attachments/assets/817eb5d4-420d-4184-966f-50dec6c87e12">
+
+
 
 
 
