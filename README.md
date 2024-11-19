@@ -17,11 +17,11 @@
 2. Open the query editor
 
 3. Create the schema and tables
-  a. Create schema
+  a. Create schema<br>
       ```
       create schema airlines;
-      ```
-  b. Create a airports dimension table
+      ```<br>
+  b. Create a airports dimension table<br>
       ```
       CREATE TABLE airlines.airports_dim (
           airport_id BIGINT,
@@ -29,8 +29,8 @@
           state VARCHAR(100),
           name VARCHAR(200)
       );
-      ```
-  c. Create a daily flights fact table
+      ```<br>
+  c. Create a daily flights fact table<br>
      ```
      CREATE TABLE airlines.daily_flights_fact (
           carrier VARCHAR(10),
@@ -43,8 +43,8 @@
           dep_delay BIGINT,
           arr_delay BIGINT
       );
-     ```
-  d. Write a copy command to copy the dimension data from S3 to Redshift Cluster
+     ```<br>
+  d. Write a copy command to copy the dimension data from S3 to Redshift Cluster<br>
      ```
       COPY airlines.airports_dim
         FROM <S3 bucket>
@@ -52,7 +52,7 @@
         DELIMITER ','
         IGNOREHEADER 1
         REGION <Region>
-     ```
+     ```<br>
 4. Create Read Only Access to S3 for Redshift Cluster
 <img width="1246" alt="image" src="https://github.com/user-attachments/assets/79c27da3-6a09-4e30-9ffe-63947fdfb844">
 
