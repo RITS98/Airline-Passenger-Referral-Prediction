@@ -105,7 +105,12 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 3. in the Choice State, if the Crawler is running, Then Wait Else Go to next step. <br>
 <img width="968" alt="image" src="https://github.com/user-attachments/assets/6e7b1fef-fdd3-4748-8340-be3028950529">
 
-5. If Execution is completed, then 
+5. If Execution is completed, then start the job (created using Visual ETL) to ingest data into the facts table in RedShift.
+6. Wait for job to complete
+7. Based on the status of the job, send the SNS Notification with the job status.
+
+###  Create Event Bridge Rule
+1. 
 
 
 
