@@ -95,10 +95,17 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 5. Create another Change Schema step to modify column names and drop columns
 <img width="857" alt="image" src="https://github.com/user-attachments/assets/1345ac6f-a768-4316-a05f-ab4d5d681d2f">
 
+6. Add a target step (AWS Redshhift to Ingest the processed data) into the facts table
+<img width="334" alt="image" src="https://github.com/user-attachments/assets/c14dbbe7-fae0-414b-973c-dd80d7db1b2b">
 
 
+### Create Step Function
+1. In the step function, choose Start Crawler step to start the Glue Crawler. <br>
+2. Then implement GetCrawler step to get the status of the Glue Crawler.<br>
+3. in the Choice State, if the Crawler is running, Then Wait Else Go to next step. <br>
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/16d97c29-0983-4640-b480-b8d4bce476ba">
 
-
+5. If Execution is completed, then 
 
 
 
