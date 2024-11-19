@@ -110,7 +110,31 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 7. Based on the status of the job, send the SNS Notification with the job status.
 
 ###  Create Event Bridge Rule
-1. 
+1. Create Rule
+<img width="819" alt="image" src="https://github.com/user-attachments/assets/35e8a6a7-251f-4c9e-b2f3-3fbdcced854d">
+
+2. Create a Rule to trigger event on .csv files
+<img width="591" alt="image" src="https://github.com/user-attachments/assets/38f59e00-b63c-42ae-98c5-b44fdc1f6fa5">
+
+```
+{
+  "source": ["aws.s3"],
+  "detail-type": ["Object Created"],
+  "detail": {
+    "bucket": {
+      "name": ["data-airline-landing-zn"]
+    },
+    "object": {
+      "key": [{
+        "suffix": ".csv"
+      }]
+    }
+  }
+}
+
+```
+
+
 
 
 
