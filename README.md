@@ -103,7 +103,7 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 1. In the step function, choose Start Crawler step to start the Glue Crawler. <br>
 2. Then implement GetCrawler step to get the status of the Glue Crawler.<br>
 3. in the Choice State, if the Crawler is running, Then Wait Else Go to next step. <br>
-<img width="944" alt="image" src="https://github.com/user-attachments/assets/16d97c29-0983-4640-b480-b8d4bce476ba">
+<img width="968" alt="image" src="https://github.com/user-attachments/assets/6e7b1fef-fdd3-4748-8340-be3028950529">
 
 5. If Execution is completed, then 
 
