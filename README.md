@@ -175,6 +175,31 @@ Since the Redshift server is sitting inside the VPC we need to create a endpoint
 
 
 
+### Conclusion
+• Solo Lesisure has the highest value counts, we can conclude that most people who travel by airline travel is solo.37.22% people who travel by airline is solo. Followed by couple and family.
+
+• We can conclude that most of the people around 78.44% people choose economy class to travel by airline. Followed by Business class and others.
+
+• 50% passenger are giving 4.0 and 5.0 rating for cabin-service when overall rating of airline is good. So we can say good cabin-service positively impacts airline businesses.
+
+• 30% people are not satisfied with entertainment service. As they give 1.0 rating.
+
+• 38% people are giving 4.0 and 5.0 rating for seat comfort. So overall rating is bad. So we can say that bad value for entertainment service negatively impact airline business.
+
+• 42% passengers gave an overall rating below 3.0 . So it, suggests that people are not very much satisfied with airline services. There are still need of improvements
+
+• We performed Hyperparameter tuning using Grid search CV method for Decision Tree Model, Random Forest Model , K-Nearest Neighbour ,Support Vector Machine and Naive Bayes. To increase accuracy and avoid Overfitting Criteria, this is done.
+
+• We have built classifier models using 6 different types of classifiers and all these are able to give accuracy of more than 90%.We can conclude that Logistic Regression gives the best model.
+
+• Model evaluation metrics comparison, we can see that Support Vector Machine being the model with highest accuracy rate by a very small margin, works best among the experimented models for the given dataset.
+
+• The most important feature are overall rating and Value for money that contribute to a model's prediction whether a passenger will recommended a particular airline to his/her friends.
+
+• In order to increase their business or grow, our client must provide excellent cabin service, ground service, food-beverage entertainment, and seat comfort.
+
+
+
 
 
 
