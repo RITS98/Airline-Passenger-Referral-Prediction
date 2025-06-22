@@ -1,5 +1,8 @@
 # Airline-Passenger-Referral-Prediction
 
+![image](https://github.com/user-attachments/assets/44e6ff7c-5e2a-4d9d-93e2-44916a43c440)
+
+
 There are two different datasets. 
 
 One dataset contain two tables 
